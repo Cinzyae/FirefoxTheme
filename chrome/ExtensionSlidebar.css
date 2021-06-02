@@ -1,63 +1,19 @@
-  :root{ 
-    --dark-0: #000000;
-    --dark-base: #000000;
-    --dark-1: #141414;
-    --dark-2: #1F1F1F;
-    --dark-3: #333333;
-    --dark-4: #3D3D3D;
-    --light-0: #D9D9D9;
-    --light-base: #bbbbbb;
-    --light-1: #B0B0B0;
-    --light-2: #A6A6A6;
-    --light-3: #9C9C9C;
-    --light-4: #919191;
-    --accent: #3F3F3F;
-    --yellow: #3F3F3F;
-    --green: #3F3F3F;
-    --red: #3F3F3F;
+:root{ 
     --extension-icon-mask: grayscale(85%) invert(75%) sepia(8%) saturate(862%) hue-rotate(173deg) brightness(88%);
-  }
-  
-  :root.incognito{ 
-    --dark-0: #1C0E34;
-    --dark-base: #20103c;
-    --dark-1: #2F1D4E;
-    --dark-2: #38225D;
-    --dark-3: #4A2D7B;
-    --dark-4: #53338A;
-    --light-0: #CC6B9C;
-    --light-base: #B9407C;
-    --light-1: #AB3B73;
-    --light-2: #9C3569;
-    --light-3: #8D305E;
-    --light-4: #7D2B54;
-    --accent: #e9207e;
-    --yellow: #C9B336;
-    --green: #36C987;
-    --red: #C9365D;
-    --extension-icon-mask: grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%);
-  }
-  
-  
-  :root{
-      --tab-border-radius: 7px; /* border radius of tabs */
-      --animation-duration: 200ms; /* duration of different animations [0s: turn all animations off] */
-      --spacing: 9px; /* spacing between tabs. [<15px: compact tabs] */
-      --distance-from-edge: 3px; /* distance between tabs, and left-right edges of sidebar*/
-      --hover-text-spacing: 0.2; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
-  
-  
-      --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
-      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  
-      --collapsed-width: 60px;
-    
-      --contextual-identity-color-blue: #63B3ED;
-      --contextual-identity-color-orange: #F6AD55;
-      --contextual-identity-color-green: #68D391;
-      --contextual-identity-color-pink: #F687B3;
-  }
+
+    --tab-border-radius: 7px; /* border radius of tabs */
+    --animation-duration: 200ms; /* duration of different animations [0s: turn all animations off] */
+    --spacing: 9px; /* spacing between tabs. [<15px: compact tabs] */
+    --distance-from-edge: 3px; /* distance between tabs, and left-right edges of sidebar*/
+    --hover-text-spacing: 0.2; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
+
+
+    --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+    --collapsed-width: 60px;
+}
   
   /************UNCUSTOMIZED CSS************/
   #tabbar-container #tabbar{
@@ -87,7 +43,7 @@
   }
   
   tab-item:not([data-level="0"]):not(.pinned){
-      border-left: dashed 2px var(--light-4) !important;
+      border-left: dashed 2px var(--theme-colors-icons) !important;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       margin-top: calc(var(--spacing)/2);
@@ -104,29 +60,25 @@
   }
   
   tab-item .label {
-      color: var(--light-2) !important;
+      color: var(--theme-colors-toolbar_field_text) !important;
       padding-bottom: 2px;
   }
   
-  tab-item .twisty:before{
-     background: var(--light-3) !important;
-  }
-  
   tab-item.active .label {
-      color: var(--light-0) !important;
+      color: var(--theme-colors-toolbar_text) !important;
   }
   
   tab-item.active {
-      background: var(--dark-3) !important;
+      background: var(--theme-colors-toolbar_field_focus) !important;
   }
   
   
   tab-item:not(.active).highlighted{
-      background: var(--dark-1) !important;
+      background: var(--theme-colors-frame) !important;
   }
   
   tab-item:not(active):hover {
-      background: var(--dark-1);
+      background: var(--theme-colors-frame);
   }
   
   tab-item:hover tab-closebox {
@@ -144,18 +96,17 @@
       border-radius: 50%;
       padding-top: 2px;
       padding-left: 2px;
-      background: var(--light-4);
+      background: var(--theme-colors-icons);
       transition   : all var(--animation-duration) var(--ease-out);
   }
   
   .sound-button:after {
-      background: var(--light-3) !important;
+      background: var(--theme-colors-icons) !important;
       margin-right: 5px;
   }
   
   .counter{
-      color: var(--light-4) !important;
-      background: var(--dark-2) !important;
+      color: var(--theme-colors-icons) !important;
       border-radius: 7px;
       margin: 2px 4px 0px 0px;
       padding: 0 4px;
@@ -234,7 +185,7 @@
   }
   
   .newtab-button::before{
-     background: var(--light-3) !important;
+     background: var(--theme-colors-icons) !important;
   }
   
   .newtab-action-selector-anchor {
@@ -244,7 +195,7 @@
   }
   
   .newtab-button:hover {
-      background: var(--dark-1);
+      background: var(--theme-colors-frame);
   }
   
   /**********PINNED TAB***************/
