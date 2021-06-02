@@ -4,6 +4,10 @@
     display: none;
 }
 
+#back-button,#forward-button{
+  display: none;
+}
+
 :root { 
     /* expanded width of the sidebar. 
       used for userChrome-static, and hover */
