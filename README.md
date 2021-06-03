@@ -6,4 +6,4 @@ Just a simple Firefox theme forks from [FlyingFox](https://github.com/akshat46/F
 > You can find the instruction on [FlyingFox Wiki](https://github.com/akshat46/FlyingFox/wiki).
 
 1. For short, Copying entire repository into profile directory. You can find the directory by typing `about:profiles` at address bar.
-2. Copying `ExtensionSlidebar.css` into "Tree Style Tab - Option - Advanced".
+2. Copying `ExtensionSidebar.css` into "Tree Style Tab - Option - Advanced".
