@@ -1,3 +1,6 @@
+:root{
+  scrollbar-width: thin !important;
+}
 .non-collapsible-section{
   display: none;
 }
