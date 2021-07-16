@@ -4,3 +4,11 @@
 .non-collapsible-section{
   display: none;
 }
+@-moz-document url-prefix("about:reader")
+{
+  body.dark
+  {
+    /* filter: brightness(70%); */
+    filter: contrast(50%);
+  }
+}
