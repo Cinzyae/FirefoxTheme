@@ -12,10 +12,6 @@ tab-item tab-closebox{
 tab-item tab-favicon{
     filter: grayscale(85%) invert(75%) sepia(8%) saturate(862%) hue-rotate(173deg) brightness(88%);
     order: 10 !important;
-    margin-right: 15px !important;
+    margin-right: 6px !important;
     transform: scale(120%) translateX(0px) !important;
-}
-
-.sound-button:after {
-    margin-right: 3px;
 }
