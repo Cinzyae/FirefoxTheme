@@ -1,5 +1,6 @@
 :root{
   scrollbar-width: thin !important;
+  scrollbar-color: dimgray black !important;
 }
 .non-collapsible-section{
   display: none;
